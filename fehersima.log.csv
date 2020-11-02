@@ -1,0 +1,24 @@
+Operation,Total Time,Average Time,Run Count
+extensible.SVG(),316,316,1
+extensible.SVG.doInit(),19,9.5,2
+extensible.SVG._getTimeline(),15,7.5,2
+extensible.SVG._getTimeline() >> Get frame items,1,0.5,2
+extensible.SVG._getShape(),6,3,2
+extensible.Contour.getEdges(),1,0.3333333333333333,3
+HalfEdge getEdge.,0,0,13
+HalfEdge getNext.,0,0,13
+extensible.SVG._getContour(),4,2,2
+extensible.Contour.getControlPoints() >> Point Lookup,0,0,2
+Edge getControl.,0,0,9
+extensible.Contour.getControlPoints() >> Order Check,1,0.5,2
+extensible.SVG._getCurve(),0,0,2
+extensible.SVG._getFill(),3,1.5,2
+extensible.SVG.checkExpand(),224,56,4
+extensible.SVG.executeExpandUse(),0,0,2
+extensible.SVG.processFinaliseDocuments(),3,1.5,2
+extensible.SVG.applyMatrices(),2,1,2
+extensible.SVG._applyColorEffects(),0,0,3
+extensible.SVG.processFixUseLinks(),0,0,2
+extensible.SVG.processCompactColours(),1,0.5,2
+extensible.SVG.processRemoveIdentMatrices(),0,0,2
+extensible.SVG.processConvertHairlineStrokes(),0,0,2

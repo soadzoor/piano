@@ -1,0 +1,103 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: none;
+	line-height: 1;
+	text-decoration: none;
+	font-size: 1em;
+	font-style: normal;
+	font-weight: normal;
+	color: black;
+}
+body {
+	min-width: 765px;
+}
+.fehergomb {
+	float: left;
+	width: 49px;
+	height: 120px;
+	border: 1px solid #000000;
+	background: url('fehersima.svg');
+	cursor: pointer;
+}
+.fehergomb:active {
+	background: url('feherlent.svg');
+}
+p {
+	font-size: 22px;
+	font-variant: small-caps;
+}
+#hangok {
+	position: absolute;
+	top: 170px;
+	left: 0px;
+	min-width: 765px;
+}
+#akordok {
+	position: absolute;
+	top: 20px;
+	left: 0;
+}
+#tones {
+	position: absolute;
+	top: 150px;
+}
+#feketek {
+	position: absolute;
+	top: 0;
+	left: 0px;
+}
+#feherekAkord {
+	min-width: 385px;
+}
+#feketekAkord {
+	position: absolute;
+	top: 0;
+	left: 0px;
+	min-width: 385px;
+}
+.feketegomb {
+	margin-left: 11px;
+	margin-right: 11px;
+	float: left;
+	width: 27px;
+	height: 75px;
+	border: 1px solid #000000;
+	background: url('feketesima.svg');
+	cursor: pointer;	
+}
+.feketegomb:active {
+	background: url('feketelent.svg');	
+}
+#cx {
+	margin-left: 36px;
+}
+#dx {
+	margin-right: 62px;
+}
+#ax {
+	margin-right: 62px;
+}
+#dx2 {
+	margin-right: 62px;
+}
+#cxk {
+	margin-left: 36px;
+}
+#dxk {
+	margin-right: 62px;
+}
+#axk {
+	margin-right: 62px;
+}
+#stop {
+	position: absolute;
+	top: 22px;
+	left: 400px;
+	width: 120px;
+	height: 120px;
+	background: url('stop_sign.svg');
+	background-size: 120px 120px;
+	cursor: pointer;
+}

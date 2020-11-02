@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Peter Varga's Piano</title>
+		<link rel="stylesheet" 
+			  type="text/css" 
+			  href="pianostyle.css">
+</head>
+<body>
+	<p id="chords">Chords:</p>
+	<div id="akordok">
+		<div id="feherekAkord">
+			<div id="ck" class="fehergomb"></div>
+			<div id="dk" class="fehergomb"></div>
+			<div id="ek" class="fehergomb"></div>
+			<div id="fk" class="fehergomb"></div>
+			<div id="gk" class="fehergomb"></div>
+			<div id="ak" class="fehergomb"></div>
+			<div id="bk" class="fehergomb"></div>
+		</div>
+		<div id="feketekAkord">
+			<div id="cxk" class="feketegomb"></div>
+			<div id="dxk" class="feketegomb"></div>
+			<div id="fxk" class="feketegomb"></div>
+			<div id="gxk" class="feketegomb"></div>
+			<div id="axk" class="feketegomb"></div>
+		</div>
+	</div>
+	<p id="tones">Tones:</p>
+	<div id="hangok">
+		<div id="feherek">
+			<div id="c" class="fehergomb"></div>
+			<div id="d" class="fehergomb"></div>
+			<div id="e" class="fehergomb"></div>
+			<div id="f" class="fehergomb"></div>
+			<div id="g" class="fehergomb"></div>
+			<div id="a" class="fehergomb"></div>
+			<div id="b" class="fehergomb"></div>
+			<div id="c2" class="fehergomb"></div>
+			<div id="d2" class="fehergomb"></div>
+			<div id="e2" class="fehergomb"></div>
+			<div id="f2" class="fehergomb"></div>
+			<div id="g2" class="fehergomb"></div>
+			<div id="a2" class="fehergomb"></div>
+			<div id="b2" class="fehergomb"></div>
+			<div id="c3" class="fehergomb"></div>
+		</div>
+		<div id="feketek">
+			<div id="cx" class="feketegomb"></div>
+			<div id="dx" class="feketegomb"></div>
+			<div id="fx" class="feketegomb"></div>
+			<div id="gx" class="feketegomb"></div>
+			<div id="ax" class="feketegomb"></div>
+			<div id="cx2" class="feketegomb"></div>
+			<div id="dx2" class="feketegomb"></div>
+			<div id="fx2" class="feketegomb"></div>
+			<div id="gx2" class="feketegomb"></div>
+			<div id="ax2" class="feketegomb"></div>
+		</div>
+	</div>
+	<div id="stop">
+	</div>
+	<!-- tones -->
+	<audio id="ch" src="c.mp3" preload="auto"></audio>
+	<audio id="cxh" src="cx.mp3" preload="auto"></audio>
+	<audio id="dh" src="d.mp3" preload="auto"></audio>
+	<audio id="dxh" src="dx.mp3" preload="auto"></audio>
+	<audio id="eh" src="e.mp3" preload="auto"></audio>
+	<audio id="fh" src="f.mp3" preload="auto"></audio>
+	<audio id="fxh" src="fx.mp3" preload="auto"></audio>
+	<audio id="gh" src="g.mp3" preload="auto"></audio>
+	<audio id="gxh" src="gx.mp3" preload="auto"></audio>
+	<audio id="ah" src="a.mp3" preload="auto"></audio>
+	<audio id="axh" src="ax.mp3" preload="auto"></audio>
+	<audio id="bh" src="b.mp3" preload="auto"></audio>
+	<audio id="c2h" src="c2.mp3" preload="auto"></audio>
+	<audio id="cx2h" src="cx2.mp3" preload="auto"></audio>
+	<audio id="d2h" src="d2.mp3" preload="auto"></audio>
+	<audio id="dx2h" src="dx2.mp3" preload="auto"></audio>
+	<audio id="e2h" src="e2.mp3" preload="auto"></audio>
+	<audio id="f2h" src="f2.mp3" preload="auto"></audio>
+	<audio id="fx2h" src="fx2.mp3" preload="auto"></audio>
+	<audio id="g2h" src="g2.mp3" preload="auto"></audio>
+	<audio id="gx2h" src="gx2.mp3" preload="auto"></audio>
+	<audio id="a2h" src="a2.mp3" preload="auto"></audio>
+	<audio id="ax2h" src="ax2.mp3" preload="auto"></audio>
+	<audio id="b2h" src="b2.mp3" preload="auto"></audio>
+	<audio id="c3h" src="c3.mp3" preload="auto"></audio>
+	
+	<!-- chords -->
+	<audio id="ckh" loop="loop" src="ck.ogg" preload="auto"></audio>
+	<audio id="cxkh" loop="loop" src="cxk.ogg" preload="auto"></audio>
+	<audio id="dkh" loop="loop" src="dk.ogg" preload="auto"></audio>
+	<audio id="dxkh" loop="loop" src="dxk.ogg" preload="auto"></audio>
+	<audio id="ekh" loop="loop" src="ek.ogg" preload="auto"></audio>
+	<audio id="fkh" loop="loop" src="fk.ogg" preload="auto"></audio>
+	<audio id="fxkh" loop="loop" src="fxk.ogg" preload="auto"></audio>
+	<audio id="gkh" loop="loop" src="gk.ogg" preload="auto"></audio>
+	<audio id="gxkh" loop="loop" src="gxk.ogg" preload="auto"></audio>
+	<audio id="akh" loop="loop" src="ak.ogg" preload="auto"></audio>
+	<audio id="axkh" loop="loop" src="axk.ogg" preload="auto"></audio>
+	<audio id="bkh" loop="loop" src="bk.ogg" preload="auto"></audio>
+	<script>
+		//tones
+		var gombokh = ["c", "cx", "d", "dx", "e", "f", "fx", "g", "gx", "a", "ax", "b", "c2", "cx2", "d2", "dx2", "e2", "f2", "fx2", "g2", "gx2", "a2", "ax2", "b2", "c3"];
+		for (var i = 0; i < gombokh.length; ++i)
+		{
+			document.getElementById(gombokh[i]).onmousedown = function (e)
+			{
+			var hang = document.getElementById(e.currentTarget.id + "h");
+				hang.currentTime = 0;
+				hang.play();
+			}
+		}
+		//chords
+		var hang;
+		var gomboka = ["ck", "cxk", "dk", "dxk", "ek", "fk", "fxk", "gk", "gxk", "ak", "axk", "bk"];
+		for (var i = 0; i < gomboka.length; ++i)
+		{
+			document.getElementById(gomboka[i]).onmousedown = function (e)
+			{
+				if (hang) 
+				{
+					hang.pause();
+				}
+				hang = document.getElementById(e.currentTarget.id + "h");
+				hang.currentTime = 0;
+				hang.play();
+			}
+		}
+		document.getElementById('stop').onmousedown = function ()
+		{
+			if (hang)
+			{
+				hang.pause();
+			}
+		}
+		var keys = {"67":"ckh", "68":"dkh", "69":"ekh", "70":"fkh", "71":"gkh", "65":"akh", "66":"bkh"}; //C D E F G A B
+		var bkeys = {"67":"cxkh", "68":"dxkh", "70":"fxkh", "71":"gxkh", "65":"axkh"};
+		window.onkeydown = function (evt)
+		{
+			if (hang) 
+			{
+				hang.pause();
+			}
+			var sourcekeys = evt.ctrlKey?bkeys:keys;
+			hang = document.getElementById(sourcekeys[evt.keyCode]);
+			if (hang)
+			{
+				evt.preventDefault();
+				hang.currentTime = 0;
+				hang.play();
+			}
+		}
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: flash2svg, http://dissentgraphics.com/tools/flash2svg -->
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" id="fehersima" image-rendering="auto" baseProfile="basic" version="1.1" x="0px" y="0px" width="29" height="75" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 75">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" color-interpolation="sRGB" x1="0" y1="37.5" x2="29" y2="37.5" id="linearGradient">
+      <stop stop-color="#000" stop-opacity="1" offset="0"/>
+      <stop stop-color="#8C8C8C" stop-opacity="1" offset="1"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" color-interpolation="sRGB" x1="0" y1="37.5" x2="29" y2="37.5" id="linearGradient1">
+      <stop stop-color="#000" stop-opacity="1" offset="0"/>
+      <stop stop-color="#8C8C8C" stop-opacity="1" offset="1"/>
+    </linearGradient>
+  </defs>
+  <g id="Scene_2" overflow="visible">
+    <g id="Scene_1_0">
+      <g id="element">
+        <path id="path" fill="url(#linearGradient1)" d="M29,0 L0,0 0,75 29,75 29,0z"/>
+      </g>
+    </g>
+  </g>
+</svg>
